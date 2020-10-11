@@ -15,6 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+```python 
 import tkinter
 from tkinter import messagebox  # なぜかこのインポート方法でないとmessageboxが使えない
 from boto3.session import Session
@@ -30,16 +31,16 @@ dynamodb = session.resource('dynamodb')
 table = dynamodb.Table('notification')
 
 
-# def create_item_btn_click(notification_id, language):
-#     def inner():
-#         print(notification_id, language)
-#         response = table.put_item(
-#             Item={
-#                 'notification-id': notification_id,
-#                 'language': language,
-#             }
-#         )
-#     return inner
+// def create_item_btn_click(notification_id, language):
+//     def inner():
+//         print(notification_id, language)
+//         response = table.put_item(
+//             Item={
+//                 'notification-id': notification_id,
+//                 'language': language,
+//             }
+//         )
+//     return inner
 
 device_list_for_18a = ["TS6230", "TS8230"]
 
@@ -69,8 +70,7 @@ def create_item_btn_click():
             'target_device': target_device,
         }
     )
-
-```python 
+ 
 def upload_image_btn_click():
     bucket.upload_file('sample.png', 'sample.png')
     # print("uploaded !")
