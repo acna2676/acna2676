@@ -20,8 +20,8 @@ import tkinter
 from tkinter import messagebox  # なぜかこのインポート方法でないとmessageboxが使えない
 from boto3.session import Session
 
-session = Session(aws_access_key_id='AKIAS3YJZEO6QDINGSGA',
-                  aws_secret_access_key='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',
+session = Session(aws_access_key_id='',
+                  aws_secret_access_key='',
                   region_name='ap-northeast-1')
 
 s3 = session.resource('s3')
